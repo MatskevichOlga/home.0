@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Mono&display=swap" rel="stylesheet">
+    <style>
+    h2 { font-family: "Open Sans", sans-serif;
+    }
+    p1 { font-family: "Open Sans", sans-serif;
+    }
+    p2 { background: #eee;
+         font-family: 'PT Mono', monospace;
+    }
+    p3 { background: #eee;
+         font-family: 'PT Mono', monospace;
+
+    }
+    p4 { font-family: "Open Sans", sans-serif;
+    }
+    p5 { font-family: "Open Sans", sans-serif;
+         background: #eee;
+    }
+
+    </style>
+</head>
+<body>
+<h2>Creating a chart</h2>
+<p1>To create a chart, we need ti instantiate the the <span style="background: #eee; font-family: 'PT Mono', monospace;">Chart</span> class. To do this, we need to pass in the 2d context of where we want to draw the chart. Here's an example.</p1>
+<br><br><p2><span style="color: #00008B">&lt;canvas </span><span style="color: green"></span>id=<span style="color: red">"myChart"</span><span style="color: green"> width=</span><span style="color: red">"400" </span><span style="color: green">height=</span><span style="color: red">"400"</span><span style="color: #00008B">&lt;/canvas&gt;</span></p2><br>
+<br><p3><span style="font-style: italic; color: #a9a9a9">// Get the context of the canvas element we want to select</span><br><span style="font-weight: bolder">var</span> ctx = <span style="color: #48D1CC">document</span>.getElementById(<span style="color: red">"myChart"</span>).getContext(<span style="color: red">"2d"</span>);<br><span style="font-weight: bolder">var</span> myNewChart = <span style="font-weight: bolder">new</span> Chart(ctx).PolarArea(data);</p3><br>
+<br><p4>We can also get the context of our canvas with jQuery. To do this, we need to get the DOM node out of the jQuery collection, and call the <span style="background: #eee; font-family: 'PT Mono', monospace;">getContext("2d")</span> method on that.</p4><br>
+<br><p5><span style="font-style: italic; color: #a9a9a9">// Get context with jQuery - using jQuery's .get() method.</span><br><span style="font-weight: bolder">var</span> ctx = $(<span style="color: red">"#myChart"</span>).get(<span style="color: green">&Theta;</span>).getContext(<span style="color: red">"2d"</span>);<br>
+<span style="font-style: italic; color: #a9a9a9">// This will get the first returned node in the jQuery collection</span><br><span style="font-weight: bolder">var</span> myNewChart = <span style="font-weight: bolder">new</span> Chart(ctx);</p3>
+</body>
+</html>
