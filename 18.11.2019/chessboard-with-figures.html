@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Chessboard with figures</title>
     <style>
-    body { width: 140Vmin; }
+    body { width: 250Vmin; }
     .chessboard { 
         margin-left: 10Vmin; 
         margin-top: 10Vmin;
@@ -40,38 +40,40 @@
     .numbers {
         height: 12.5Vmin;
         width: 12.5Vmin;
-        margin-top: -5Vmin;
+      
     }
-    .odd > [title="castle"] {
+    .odd>[title="castle"] {
         background-image: url("images/chess.png");
         width: 12.5Vmin;
         height: 12.5Vmin;
-        background-position-x: 40%;
+        background-position-x: 41%;
         background-position-y: 0;
         background-repeat: no-repeat;
         background-size: 600% 200%;
+        float: left;
     }
    
-    }
-    [title="horse"] {
+    .odd>[title="horse"] {
         background-image: url("images/chess.png");
         width: 12.5Vmin;
         height: 12.5Vmin;
-        background-position-x: 80%;
+        background-position-x: 82%;
         background-position-y: 0;
         background-repeat: no-repeat;
         background-size: 600% 200%;
+        float: left;
     }
-    [title="elefant"] {
+    .odd>[title="elefant"] {
         background-image: url("images/chess.png");
         width: 12.5Vmin;
         height: 12.5Vmin;
-        background-position-x: 60%;
+        background-position-x: 62%;
         background-position-y: 0;
         background-repeat: no-repeat;
         background-size: 600% 200%;
+        float: left;
     }
-    [title="king"] {
+    .odd>[title="king"] {
         background-image: url("images/chess.png");
         width: 12.5Vmin;
         height: 12.5Vmin;
@@ -79,8 +81,9 @@
         background-position-y: 0;
         background-repeat: no-repeat;
         background-size: 600% 200%;
+        float: left;
     }
-    [title="queen"] {
+    .odd>[title="queen"] {
         background-image: url("images/chess.png");
         width: 12.5Vmin;
         height: 12.5Vmin;
@@ -88,8 +91,78 @@
         background-position-y: 0;
         background-repeat: no-repeat;
         background-size: 600% 200%;
+        float: left;
     }
-
+    .even>[title="pawn"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 104%;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+        float: left;
+    }
+     .odd>[title="pawn"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 104%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+        float: right;
+    }
+    .even>[title="castle"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 41%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+        float: left; 
+    }
+    .even>[title="horse"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 82%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+        float: right;
+    }
+    .even>[title="elefant"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 62%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+        float: right;
+    }
+    .even>[title="king"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 20%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+        float: left;
+    }
+    .even>[title="queen"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 0;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+        float: right;
+    }
     </style>
 </head>
 
