@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chessboard with figures</title>
+    <style>
+    body { width: 140Vmin; }
+    .chessboard { 
+        margin-left: 10Vmin; 
+        margin-top: 10Vmin;
+           
+        }
+    .literas {
+        height: 12.5Vmin;
+        width: 12.5Vmin;
+        float: left;
+    }
+
+    .odd {
+        height: 100Vmin;
+        width: 12.5Vmin;
+        border: 1px solid #f00;
+        background:linear-gradient(#f00 0, #f00 12.5%, #fff 12.5%, #fff 25%, #f00 25%, #f00 37.5%, #fff 37.5%, #fff 50%,
+       #f00 50%, #f00 62.5%, #fff 62.5%, #fff 75%, #f00 75%, #f00 87.5%, #fff 87.5%, #fff 100%);
+       float: left;
+    
+    }
+    .even {
+        height: 100Vmin;
+        width: 12.5Vmin;
+        border: 1px solid #f00;
+        background:linear-gradient(#fff 0, #fff 12.5%, #f00 12.5%, #f00 25%, #fff 25%, #fff 37.5%, #f00 37.5%, #f00 50%,
+       #fff 50%, #fff 62.5%, #f00 62.5%, #f00 75%, #fff 75%, #fff 87.5%, #f00 87.5%, #f00 100%);
+       float: left;
+
+    }
+    .numbers {
+        height: 12.5Vmin;
+        width: 12.5Vmin;
+        margin-top: -5Vmin;
+    }
+    .odd > [title="castle"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 40%;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+    }
+   
+    }
+    [title="horse"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 80%;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+    }
+    [title="elefant"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 60%;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+    }
+    [title="king"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 20%;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+    }
+    [title="queen"] {
+        background-image: url("images/chess.png");
+        width: 12.5Vmin;
+        height: 12.5Vmin;
+        background-position-x: 0;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 600% 200%;
+    }
+
+    </style>
+</head>
+
+<body>
+	<div class="chessboard">
+		<div class="literas">
+			<div></div>
+			<div>a</div>
+			<div>b</div>
+			<div>c</div>
+			<div>d</div>
+			<div>e</div>
+			<div>f</div>
+			<div>g</div>
+			<div>h</div>
+			<div></div>
+		</div>
+		<div class="odd">
+			<div class="numbers">1</div>
+			<div title="castle"></div>
+			<div title="horse"></div>
+			<div title="elefant"></div>
+			<div title="king"></div>
+			<div title="queen"></div>
+			<div title="elefant"></div>
+			<div title="horse"></div>
+			<div title="castle"></div>
+			<div class="numbers">1</div>
+		</div>
+		<div class="even">
+			<div class="numbers">2</div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div class="numbers">2</div>
+		</div>
+		<div class="odd">
+			<div class="numbers">3</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">3</div>
+		</div>
+		<div class="even">
+			<div class="numbers">4</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">4</div>
+		</div>
+		<div class="odd">
+			<div class="numbers">5</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">5</div>
+		</div>
+		<div class="even">
+			<div class="numbers">6</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">6</div>
+		</div>
+		<div class="odd">
+			<div class="numbers">7</div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div class="numbers">7</div>
+		</div>
+		<div class="even">
+			<div class="numbers">8</div>
+			<div title="castle"></div>
+			<div title="horse"></div>
+			<div title="elefant"></div>
+			<div title="king"></div>
+			<div title="queen"></div>
+			<div title="elefant"></div>
+			<div title="horse"></div>
+			<div title="castle"></div>
+			<div class="numbers">8</div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div>a</div>
+			<div>b</div>
+			<div>c</div>
+			<div>d</div>
+			<div>e</div>
+			<div>f</div>
+			<div>g</div>
+			<div>h</div>
+			<div></div>
+		</div>
+	</div>
+</body>
+
+</html>
