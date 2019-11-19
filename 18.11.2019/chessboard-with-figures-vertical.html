@@ -7,80 +7,97 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Chessboard with figures vertical</title>
     <style>
-    body { width: 140Vmin; }
-    .chessboard { 
-        margin-left: 10Vmin; 
-        margin-top: 10Vmin;
-           
-        }
-    .literas {
-        height: 12.5Vmin;
-        width: 12.5Vmin;
+    body {
+        margin: 0;
+    }
+    .odd>div,.even>div,.numbers>div {
+        width: 10Vmin;
+        height: 10Vmin;
         float: left;
     }
-
-    .odd {
-        height: 100Vmin;
-        width: 12.5Vmin;
-        border: 1px solid #f00;
-        background:linear-gradient(#f00 0, #f00 12.5%, #fff 12.5%, #fff 25%, #f00 25%, #f00 37.5%, #fff 37.5%, #fff 50%,
-       #f00 50%, #f00 62.5%, #fff 62.5%, #fff 75%, #f00 75%, #f00 87.5%, #fff 87.5%, #fff 100%);
-       float: left;
+    .chessboard>div {
+        height: 10Vmin;
+    }
+    .odd>.literas+div,.odd>.literas+div+div+div,
+    .odd>.literas+div,.odd>.literas+div+div+div+div+div,
+    .odd>.literas+div,.odd>.literas+div+div+div+div+div+div+div,
+    .even>.literas+div+div,
+    .even>.literas+div+div+div+div,
+    .even>.literas+div+div+div+div+div+div,
+    .even>.literas+div+div+div+div+div+div+div+div
+    { background-color: red;
+      float: left;
+     }
+    .numbers>div,.literas {
+        line-height:10Vmin; 
+        text-align: center;
+    }
+    .chessboard>div>div {
+        outline: 1px solid red;
+    }
+    .chessboard>.numbers>div,literas {
+        outline: 0px solid transparent;
+    }
+    .chessboard>div+div>.literas {
+        outline: 0px solid transparent;
+    }
+    [title],.pawn {
+        background-image: url("images/chess.png");
+        background-size: 600% 200%;
+        background-repeat: no-repeat;
+        float: left;
+    }
     
-    }
-    .even {
-        height: 100Vmin;
-        width: 12.5Vmin;
-        border: 1px solid #f00;
-        background:linear-gradient(#fff 0, #fff 12.5%, #f00 12.5%, #f00 25%, #fff 25%, #fff 37.5%, #f00 37.5%, #f00 50%,
-       #fff 50%, #fff 62.5%, #f00 62.5%, #f00 75%, #fff 75%, #fff 87.5%, #f00 87.5%, #f00 100%);
-       float: left;
-
-    }
-    .chessboard>.numbers {
-        height: 12.5Vmin;
-        width: 12.5Vmin;
-        float: left;
-    }
-    .odd>.pawn {
-        background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+    .odd>.pawn:nth-child(3), 
+    .even>.pawn:nth-child(3) {
         background-position-x: 104%;
-        background-position-y: 0;
-        background-repeat: no-repeat;
-        background-size: 600% 200%;
-       
     }
-    .odd>[title="castle"] {
-        background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+    .odd>.pawn:nth-child(8), 
+    .even>.pawn:nth-child(8) {
+        background-position-x: 104%;
+        background-position-y: 100%;
+    }
+    .odd>[title="castle"]:nth-child(2), 
+    .even>[title="castle"]:nth-child(2) {
         background-position-x: 41%;
-        background-position-y: 0;
-        background-repeat: no-repeat;
-        background-size: 600% 200%;
-        float: left;
     }
-    .even>[title="horse"] {
-        background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
-        background-position-x: 82%;
+    .odd>[title="castle"]:nth-child(9), 
+    .even>[title="castle"]:nth-child(9) {
+        background-position-x: 41%;
         background-position-y: 100%;
-        background-repeat: no-repeat;
-        background-size: 600% 200%;
-        float: left;
-        }
-    .even>.pawn{
-        background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
-        background-position-x: 104%;
+    }
+    .odd>[title="horse"]:nth-child(2), 
+    .even>[title="horse"]:nth-child(2) {
+        background-position-x: 83%;
+    }
+    .odd>[title="horse"]:nth-child(9), 
+    .even>[title="horse"]:nth-child(9) {
+        background-position-x: 83%;
         background-position-y: 100%;
-        background-repeat: no-repeat;
-        background-size: 600% 200%;
-        float: left;
+    }
+    .odd>[title="elefant"]:nth-child(2), 
+    .even>[title="elefant"]:nth-child(2) {
+        background-position-x: 62%;
+    }
+    .odd>[title="elefant"]:nth-child(9), 
+    .even>[title="elefant"]:nth-child(9) {
+        background-position-x: 62%;
+        background-position-y: 100%;
+    } 
+    .even>[title="queen"]:nth-child(2) {
+        background-position-x: 4%;
+    }
+
+    .odd>[title="queen"]:nth-child(9) {
+        background-position-x: 19%;
+        background-position-y: 100%;
+    }
+    .even>[title="king"]:nth-child(2) {
+        background-position-x: 19%;
+    }
+    .even>[title="king"]:nth-child(9) {
+        background-position-x: -2%;
+        background-position-y: 100%;
     }
         </style>
 

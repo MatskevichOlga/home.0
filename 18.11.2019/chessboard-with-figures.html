@@ -7,21 +7,30 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Chessboard with figures</title>
     <style>
-    body { width: 250Vmin; }
-    .chessboard { 
+    body { width: 100Vmin; }
+    .odd>div,.even>div,.literas>div {
+        width: 10Vmin;
+        height: 10Vmin;
+        float: left;
+    }
+    .chessboard {
         margin-left: 10Vmin; 
         margin-top: 10Vmin;
            
-        }
+    }
+    .chessboard>div {
+        height: 10Vmin;
+    }
     .literas {
-        height: 12.5Vmin;
-        width: 12.5Vmin;
+        height: 10Vmin;
+        width: 10Vmin;
         float: left;
+        padding: 10px;
     }
 
     .odd {
-        height: 100Vmin;
-        width: 12.5Vmin;
+        height: 80Vmin;
+        width: 10Vmin;
         border: 1px solid #f00;
         background:linear-gradient(#f00 0, #f00 12.5%, #fff 12.5%, #fff 25%, #f00 25%, #f00 37.5%, #fff 37.5%, #fff 50%,
        #f00 50%, #f00 62.5%, #fff 62.5%, #fff 75%, #f00 75%, #f00 87.5%, #fff 87.5%, #fff 100%);
@@ -29,23 +38,24 @@
     
     }
     .even {
-        height: 100Vmin;
-        width: 12.5Vmin;
+        height: 80Vmin;
+        width: 10Vmin;
         border: 1px solid #f00;
         background:linear-gradient(#fff 0, #fff 12.5%, #f00 12.5%, #f00 25%, #fff 25%, #fff 37.5%, #f00 37.5%, #f00 50%,
        #fff 50%, #fff 62.5%, #f00 62.5%, #f00 75%, #fff 75%, #fff 87.5%, #f00 87.5%, #f00 100%);
        float: left;
 
+
     }
     .odd.even>.numbers {
-        height: 12.5Vmin;
-        width: 12.5Vmin;
+        height: 10Vmin;
+        width: 10Vmin;
       
     }
     .odd>[title="castle"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 41%;
         background-position-y: 0;
         background-repeat: no-repeat;
@@ -55,8 +65,8 @@
    
     .odd>[title="horse"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 82%;
         background-position-y: 0;
         background-repeat: no-repeat;
@@ -65,8 +75,8 @@
     }
     .odd>[title="elefant"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 62%;
         background-position-y: 0;
         background-repeat: no-repeat;
@@ -75,8 +85,8 @@
     }
     .odd>[title="king"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 20%;
         background-position-y: 0;
         background-repeat: no-repeat;
@@ -85,8 +95,8 @@
     }
     .odd>[title="queen"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 0;
         background-position-y: 0;
         background-repeat: no-repeat;
@@ -95,8 +105,8 @@
     }
     .even>[title="pawn"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 104%;
         background-position-y: 0;
         background-repeat: no-repeat;
@@ -105,8 +115,8 @@
     }
      .odd>[title="pawn"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 104%;
         background-position-y: 100%;
         background-repeat: no-repeat;
@@ -115,8 +125,8 @@
     }
     .even>[title="castle"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 41%;
         background-position-y: 100%;
         background-repeat: no-repeat;
@@ -125,8 +135,8 @@
     }
     .even>[title="horse"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 82%;
         background-position-y: 100%;
         background-repeat: no-repeat;
@@ -135,8 +145,8 @@
     }
     .even>[title="elefant"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 62%;
         background-position-y: 100%;
         background-repeat: no-repeat;
@@ -145,8 +155,8 @@
     }
     .even>[title="king"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 20%;
         background-position-y: 100%;
         background-repeat: no-repeat;
@@ -155,8 +165,8 @@
     }
     .even>[title="queen"] {
         background-image: url("images/chess.png");
-        width: 12.5Vmin;
-        height: 12.5Vmin;
+        width: 10Vmin;
+        height: 10Vmin;
         background-position-x: 0;
         background-position-y: 100%;
         background-repeat: no-repeat;
