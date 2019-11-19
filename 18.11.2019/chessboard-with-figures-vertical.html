@@ -48,61 +48,61 @@
         float: left;
     }
     
-    .odd>.pawn:nth-child(3), 
-    .even>.pawn:nth-child(3) {
+    .pawn:nth-child(3) {
         background-position-x: 104%;
     }
-    .odd>.pawn:nth-child(8), 
-    .even>.pawn:nth-child(8) {
+    .pawn:nth-child(8) {
         background-position-x: 104%;
         background-position-y: 100%;
     }
-    .odd>[title="castle"]:nth-child(2), 
-    .even>[title="castle"]:nth-child(2) {
+
+    [title="castle"]:nth-child(2) {
         background-position-x: 41%;
     }
-    .odd>[title="castle"]:nth-child(9), 
-    .even>[title="castle"]:nth-child(9) {
+    [title="castle"]:nth-child(9) {
         background-position-x: 41%;
         background-position-y: 100%;
     }
-    .odd>[title="horse"]:nth-child(2), 
-    .even>[title="horse"]:nth-child(2) {
+    [title="horse"]:nth-child(2) {
         background-position-x: 83%;
     }
-    .odd>[title="horse"]:nth-child(9), 
-    .even>[title="horse"]:nth-child(9) {
+    [title="horse"]:nth-child(9) {
         background-position-x: 83%;
         background-position-y: 100%;
     }
-    .odd>[title="elefant"]:nth-child(2), 
-    .even>[title="elefant"]:nth-child(2) {
+    [title="elefant"]:nth-child(2) {
         background-position-x: 62%;
     }
-    .odd>[title="elefant"]:nth-child(9), 
-    .even>[title="elefant"]:nth-child(9) {
+    [title="elefant"]:nth-child(9) {
         background-position-x: 62%;
         background-position-y: 100%;
     } 
-    .even>[title="queen"]:nth-child(2) {
-        background-position-x: 4%;
+    [title="queen"]:nth-child(2) {
+        background-position-x: 0%;
     }
 
-    .odd>[title="queen"]:nth-child(9) {
+    [title="queen"]:nth-child(9) {
         background-position-x: 19%;
         background-position-y: 100%;
     }
-    .even>[title="king"]:nth-child(2) {
+    [title="king"]:nth-child(2) {
         background-position-x: 19%;
     }
-    .even>[title="king"]:nth-child(9) {
+    [title="king"]:nth-child(9) {
         background-position-x: -2%;
         background-position-y: 100%;
     }
+    .odd>.literas+div:hover,.odd>.literas+div+div+div:hover,
+    .odd>.literas+div:hover,.odd>.literas+div+div+div+div+div:hover,
+    .odd>.literas+div:hover,.odd>.literas+div+div+div+div+div+div+div:hover,
+    .even>.literas+div+div:hover,
+    .even>.literas+div+div+div+div:hover,
+    .even>.literas+div+div+div+div+div+div:hover,
+    .even>.literas+div+div+div+div+div+div+div+div:hover { background-color: blue; }
+    .chessboard>div>div:hover { background-color: blue; }    
         </style>
 
 </head>
-
 <body>
 	<div class="chessboard">
 		<div class="numbers">
